@@ -1,1 +1,22 @@
+$ mkdir backend
+$ ls
+$ cd backend/
+$ ls
+~/backend $ python3
+$ ls
+$ python3 -m venv venv 
+$ ls
+$ cd venv/
+$ ls
+bin include lib lib64 pyvenv.cfg #as o/p
+& cd bin/
+~/backend/venv/bin $ls
+$source activate
+$ pip install flask
+$ touch fastapi_app.py
+$ nano fastapi_app.py
+$ pip install fastapi uvicorn
+$ uvicorn fastapi_app:app --reload
+$ ls fastapi.py
+$ cat fastapi_app.py
 
