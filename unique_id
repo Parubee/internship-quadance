@@ -1,0 +1,13 @@
+from fastapi import FastAPI
+import uuid
+app =  FastAPI()
+
+@app.get("/id_name")
+def get_id():
+    unique_id = str(uuid.uuid4())
+    return {"id": unique_id}
+
+
+#o/p
+Uvicorn running on http://127.0.0.1:8000 
+id	"b66b6062-afd3-4fc7-b40f-b5ed512b0xccdd4f"
