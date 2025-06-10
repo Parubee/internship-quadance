@@ -1,0 +1,7 @@
+def outer_function(message):
+    def inner_function():
+        print(message)
+    return inner_function
+
+my_func = outer_function("Hello, World!")
+my_func()  # Output: Hello, World!
