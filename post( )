@@ -1,0 +1,11 @@
+import requests
+
+url = "https://example.com/api/endpoint"
+data = {"key": "value", "other_key": "other_value"}
+response = requests.post(url, json=data)
+
+if response.status_code == 200:
+    print("Request successful")
+    print(response.json())
+else:
+    print(f"Request failed with status code: {response.status_code}")
