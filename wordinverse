@@ -1,0 +1,25 @@
+original = "I AM PARVATHI"
+length = 0
+for ch in original:
+    length += 1
+i = 0   
+current_word = ""
+final_result = ""   
+while i <= length:
+    if i == length or original[i] == " ":
+        reversed_word = ""
+        word_length = 0
+        for char in current_word:
+            word_length += 1
+        j = word_length - 1
+        while j >= 0:
+            reversed_word = reversed_word + current_word[j]
+            j -= 1
+        final_result = final_result + reversed_word
+        if i != length:
+            final_result = final_result + " "
+        current_word = ""
+    else:
+        current_word = current_word + original[i]
+    i += 1
+print(final_result)
