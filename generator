@@ -1,0 +1,12 @@
+def data():
+    yield "Parvathi"
+    yield "Shreyas"
+    yield "Quadance"
+
+obj = data()
+
+print(next(obj))
+
+print(next(obj))
+
+print(next(obj))
